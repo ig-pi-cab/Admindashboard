@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <span class="material-symbols-outlined">
+                        supervisor_account
+                    </span>
+                    <h2>Admin panel</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined">
+                        close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href=""  class="active">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <h3>Clientes</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">
+                        nordic_walking
+                    </span>
+                    <h3>Actividades</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">
+                        imagesmode
+                    </span>
+                    <h3>Imagenes</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">
+                        newspaper
+                    </span>
+                    <h3>Noticias</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">
+                        attach_money
+                    </span>
+                    <h3>Pagos</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">
+                        inbox
+                    </span>
+                    <h3>Mensajeria</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">
+                        logout
+                    </span>
+                    <h3>Salir</h3>
+                </a>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date" name="" id="">
+            </div>
+
+            <div class="insights">
+                <!-- total ventas -->
+                <div class="sales">
+                    <span class="material-symbols-outlined">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total ventas</h3>
+                            <h1>$20</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg> 
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Ultimas 24 horas</small>
+                </div>
+                <!-- total Gastos/ Este puede estar sobrando -->
+                <div class="gastos">
+                    <span class="material-symbols-outlined">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total gastos</h3>
+                            <h1>$10</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg> 
+                            <div class="number">
+                                <p>37%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Ultimas 24 horas</small>
+                </div>
+                <!-- total Ganancias -->
+                <div class="ganancias">
+                    <span class="material-symbols-outlined">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total ganancias</h3>
+                            <h1>$30</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg> 
+                            <div class="number">
+                                <p>55%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Ultimas 24 horas</small>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
