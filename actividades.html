@@ -26,43 +26,43 @@
             </div>
 
             <div class="sidebar">
-                <a href=""  class="">
+                <a href="/index.html"  class="">
                     <span class="material-symbols-outlined">
                         dashboard
                     </span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="" class="active">
+                <a href="/clientes.html" >
                     <span class="material-symbols-outlined">
                         person
                     </span>
                     <h3>Clientes</h3>
                 </a>
-                <a href="">
+                <a href="/actividades.html"  class="active">
                     <span class="material-symbols-outlined">
                         nordic_walking
                     </span>
                     <h3>Actividades</h3>
                 </a>
-                <a href="">
+                <a href="/imagenes.html">
                     <span class="material-symbols-outlined">
                         imagesmode
                     </span>
                     <h3>Imagenes</h3>
                 </a>
-                <a href="">
+                <a href="/noticias.html" >
                     <span class="material-symbols-outlined">
                         newspaper
                     </span>
                     <h3>Noticias</h3>
                 </a>
-                <a href="">
+                <a href="/pagos.html" >
                     <span class="material-symbols-outlined">
                         attach_money
                     </span>
                     <h3>Pagos</h3>
                 </a>
-                <a href="">
+                <a href="/mensajeria.html" >
                     <span class="material-symbols-outlined">
                         inbox
                     </span>
@@ -80,11 +80,77 @@
 
         <main>
             <h1>Actividades</h1>
-            <div class="cliente">
+            <div class="actividades">
+                <form>
+                    <div class="input-row">
+                      <label for="id">Numero identificador</label>
+                      <input type="text" name="id" id="id" />
+                    </div>
+                    <div class="input-row">
+                      <label for="nombre">Nombre</label>
+                      <input type="text" name="nombre" id="nombre" />
+                    </div>
+                    <div class="input-row">
+                        <label for="descripcion">Descripcion</label>
+                        <input type="text" name="descripcion" id="descripcion" />
+                      </div>
+                      <div class="input-row">
+                        <label for="cupo">Cupo</label>
+                        <input type="text" name="cupo" id="cupo" />
+                      </div>
+                      <div class="input-row">
+                        <label for="cupo_traslado">Cupo traslado</label>
+                        <input type="text" name="cupo_traslado" id="cupo_traslado" />
+                      </div>
+                      <div class="input-row">
+                        <label for="precio">Precio</label>
+                        <input type="text" name="precio" id="precio" />
+                      </div>
+                      <div class="input-row">
+                        <label for="estado">Estado</label>
+                        <input type="text" name="estado" id="estado" />
+                      </div>
+                      <div class="input-row">
+                        <label for="hora">Hora</label>
+                        <input type="text" name="hora" id="hora" />
+                      </div>
+                      <div class="input-row">
+                        <label for="fecha">Fecha</label>
+                        <input type="text" name="fecha" id="fecha" />
+                      </div>
+                    <div class="input-row">
+                        <label for="createdAt">Creado el</label>
+                        <input type="text" name="createdAt" id="createdAt" />
+                      </div>
+                      <div class="input-row">
+                        <label for="updatedAt">Actualizado el</label>
+                        <input type="text" name="updatedAt" id="updatedAt" />
+                      </div>
+                    <button>Submit</button>
+                  </form>
+                  <table>
+                    <thead>
+                        <tr>
+                            <th>Numero identificador</th>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Cupo</th>
+                            <th>Cupo traslado</th>
+                            <th>Precio</th>
+                            <th>Estado</th>
+                            <th>Hora</th>
+                            <th>Fecha</th>
+                            <th>Creado el</th>
+                            <th>Actualizado el</th>
+                            <th>Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
               
             </div>
         </main>
     </div>
-    <script src="/script.js"></script>    
+    <script src="/actividades.js"></script>    
 </body>
 </html>

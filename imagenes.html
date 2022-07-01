@@ -7,6 +7,7 @@
     <title>DASHBOARD</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+    
    
 </head>
 <body>
@@ -26,43 +27,43 @@
             </div>
 
             <div class="sidebar">
-                <a href=""  class="">
+                <a href="/index.html"  class="">
                     <span class="material-symbols-outlined">
                         dashboard
                     </span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="" class="active">
+                <a href="/clientes.html" >
                     <span class="material-symbols-outlined">
                         person
                     </span>
                     <h3>Clientes</h3>
                 </a>
-                <a href="">
+                <a href="/actividades.html">
                     <span class="material-symbols-outlined">
                         nordic_walking
                     </span>
                     <h3>Actividades</h3>
                 </a>
-                <a href="">
+                <a href="/imagenes.html" class="active">
                     <span class="material-symbols-outlined">
                         imagesmode
                     </span>
                     <h3>Imagenes</h3>
                 </a>
-                <a href="">
+                <a href="/noticias.html" >
                     <span class="material-symbols-outlined">
                         newspaper
                     </span>
                     <h3>Noticias</h3>
                 </a>
-                <a href="">
+                <a href="/pagos.html" >
                     <span class="material-symbols-outlined">
                         attach_money
                     </span>
                     <h3>Pagos</h3>
                 </a>
-                <a href="">
+                <a href="/mensajeria.html" >
                     <span class="material-symbols-outlined">
                         inbox
                     </span>
@@ -80,11 +81,47 @@
 
         <main>
             <h1>Imagenes</h1>
-            <div class="cliente">
-              
+            <div class="imagenes">
+                <form>
+                    <div class="input-row">
+                      <label for="url">Url</label>
+                      <input type="url" name="url" id="url" />
+                    </div>
+                    <div class="input-row">
+                      <label for="alt">alt</label>
+                      <input type="text" name="alt" id="alt" />
+                    </div>
+                    <div class="input-row">
+                        <label for="createdAt">Creado el</label>
+                        <input type="text" name="createdAt" id="createdAt" />
+                      </div>
+                      <div class="input-row">
+                        <label for="updatedAt">Actualizado el</label>
+                        <input type="text" name="updatedAt" id="updatedAt" />
+                      </div>
+                      <div class="input-row">
+                        <label for="imagen">Imagen</label>
+                        <input type='file' onchange="readURL(this);" />
+                        <img id="imagen" src="http://placehold.it/180" alt="imagen" />
+                      </div>
+                    <button>Submit</button>
+                  </form>
+                  <table>
+                    <thead>
+                        <tr>
+                            <th>Url</th>
+                            <th>Alt</th>
+                            <th>Creado el</th>
+                            <th>Actualizado el</th>
+                            <th>Imagen</th>
+                            <th>Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
             </div>
         </main>
     </div>
-    <script src="/script.js"></script>    
+    <script src="/imagenes.js"></script>    
 </body>
 </html>
