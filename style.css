@@ -281,3 +281,28 @@ main .insights > div.gastos span{
 main .insights > div.ganancias span{
     background: var(--color-success);
 }
+
+
+/* tablas */
+
+table{
+    border-collapse: collapse
+    
+}
+
+td, th{
+    border: 1px solid #cccccc;
+    padding: 8px;
+
+}
+
+tr:nth-child(even){
+    background-color: lightgray;
+}
+
+tr:hover{
+    background-color: black;
+    color: whitesmoke;
+
+}
+
